@@ -1,52 +1,56 @@
 [
-      {
-        "id": 1,
-        "name": "Burj Khalifa",
-        "location": "Dubai, United Arab Emirates",
-        "image": "https://images.unsplash.com/photo-1572364769167-198dcb7b520c?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "description": "The tallest building in the world, offering panoramic views from its observation decks.",
-        "viewDetailsUrl": "/details/1"
-      },
-      {
-        "id": 2,
-        "name": "Petra",
-        "location": "Ma'an Governorate, Jordan",
-        "image": "https://plus.unsplash.com/premium_photo-1674657644175-2e4099e3aa14?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "description": "Ancient rock-cut city and UNESCO World Heritage Site, famous for its rose-colored façades.",
-        "viewDetailsUrl": "/details/2"
-      },
-      {
-        "id": 3,
-        "name": "Sheikh Zayed Grand Mosque",
-        "location": "Abu Dhabi, United Arab Emirates",
-        "image": "https://images.unsplash.com/photo-1595539657242-2cf38c017495?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNoaWVraCUyMHpheWVkJTIwR1JBTkQlMjBtb3NxdWV8ZW58MHwxfDB8fHww",
-        "description": "One of the world’s largest mosques, known for its stunning architecture and intricate design.",
-        "viewDetailsUrl": "/details/3"
-      },
-      {
-        "id": 4,
-        "name": "Al-Ula (Hegra)",
-        "location": "Al Madinah Region, Saudi Arabia",
-        "image": "https://images.unsplash.com/photo-1710894272187-1b6d09fe6498?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QWwlMjBVbGElMjAoSGVncmEpfGVufDB8MXwwfHx8MA%3D%3D",
-        "description": "An archaeological treasure with Nabatean tombs and sandstone formations.",
-        "viewDetailsUrl": "/details/4"
-      },
-      {
-        "id": 5,
-        "name": "The Dead Sea",
-        "location": "Jordan-Israel Border",
-        "image": "https://images.unsplash.com/photo-1641496011336-baf26b2d778a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8VGhlJTIwRGVhZCUyMFNlYXxlbnwwfDF8MHx8fDA%3D",
-        "description": "The lowest point on Earth where you can float effortlessly in mineral-rich waters.",
-        "viewDetailsUrl": "/details/5"
-      },
-      {
-        "id": 6,
-        "name": "Sultan Qaboos Grand Mosque",
-        "location": "Muscat, Oman",
-        "image": "https://images.unsplash.com/photo-1597734187998-e1931acfe2ed?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U3VsdGFuJTIwUWFib29zJTIwR3JhbmQlMjBNb3NxdWV8ZW58MHwxfDB8fHww",
-        "description": "Architectural masterpiece featuring the world’s second largest hand-woven carpet.",
-        "viewDetailsUrl": "/details/6"
-      }
-    ]
-  
-  
+  {
+    "id": 1,
+    "name": "Burj Khalifa",
+    "location": "Dubai, United Arab Emirates",
+    "image": "https://images.unsplash.com/photo-1572364769167-198dcb7b520c?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "The Burj Khalifa is the tallest building in the world, standing at a staggering height of 828 meters. Located in the heart of Dubai, it offers panoramic views of the city skyline from its observation decks on the 124th and 148th floors. Visitors can enjoy luxury dining experiences, multimedia presentations, and breathtaking sunset views.",
+    "estimatedCostFromBangladesh": "Approx. $800 - $1200",
+    "viewDetailsUrl": "/details/1"
+  },
+  {
+    "id": 2,
+    "name": "Petra",
+    "location": "Ma'an Governorate, Jordan",
+    "image": "https://plus.unsplash.com/premium_photo-1674657644175-2e4099e3aa14?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Petra is a historical and archaeological marvel, carved into rose-red rock over 2,000 years ago by the Nabataeans. This UNESCO World Heritage Site is famous for its iconic façade of Al-Khazneh (The Treasury), the Monastery, and the intricate system of tombs, caves, and passageways. It is one of the New Seven Wonders of the World.",
+    "estimatedCostFromBangladesh": "Approx. $1000 - $1400",
+    "viewDetailsUrl": "/details/2"
+  },
+  {
+    "id": 3,
+    "name": "Sheikh Zayed Grand Mosque",
+    "location": "Abu Dhabi, United Arab Emirates",
+    "image": "https://images.unsplash.com/photo-1595539657242-2cf38c017495?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNoaWVraCUyMHpheWVkJTIwR1JBTkQlMjBtb3NxdWV8ZW58MHwxfDB8fHww",
+    "description": "The Sheikh Zayed Grand Mosque is one of the largest mosques in the world, accommodating over 40,000 worshippers. Its gleaming white marble structure, intricate floral designs, and reflective pools make it a visual masterpiece. The mosque features the world’s largest hand-knotted carpet and stunning chandeliers made of Swarovski crystals.",
+    "estimatedCostFromBangladesh": "Approx. $750 - $1100",
+    "viewDetailsUrl": "/details/3"
+  },
+  {
+    "id": 4,
+    "name": "Al-Ula (Hegra)",
+    "location": "Al Madinah Region, Saudi Arabia",
+    "image": "https://images.unsplash.com/photo-1710894272187-1b6d09fe6498?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QWwlMjBVbGElMjAoSGVncmEpfGVufDB8MXwwfHx8MA%3D%3D",
+    "description": "Al-Ula, also known as Hegra, is Saudi Arabia’s first UNESCO World Heritage Site. It is home to well-preserved tombs carved into sandstone cliffs by the Nabataeans over 2,000 years ago. The dramatic desert landscape is complemented by modern facilities, cultural festivals, and guided tours that reveal the site’s rich history.",
+    "estimatedCostFromBangladesh": "Approx. $950 - $1300",
+    "viewDetailsUrl": "/details/4"
+  },
+  {
+    "id": 5,
+    "name": "The Dead Sea",
+    "location": "Jordan-Israel Border",
+    "image": "https://images.unsplash.com/photo-1641496011336-baf26b2d778a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8VGhlJTIwRGVhZCUyMFNlYXxlbnwwfDF8MHx8fDA%3D",
+    "description": "The Dead Sea is the Earth's lowest elevation on land and a unique natural wonder known for its extreme salinity, allowing visitors to float effortlessly. The mineral-rich mud and waters are believed to have therapeutic properties. Located between Jordan and Israel, it is surrounded by desert landscapes and resort hotels.",
+    "estimatedCostFromBangladesh": "Approx. $1000 - $1400",
+    "viewDetailsUrl": "/details/5"
+  },
+  {
+    "id": 6,
+    "name": "Sultan Qaboos Grand Mosque",
+    "location": "Muscat, Oman",
+    "image": "https://images.unsplash.com/photo-1597734187998-e1931acfe2ed?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U3VsdGFuJTIwUWFib29zJTIwR3JhbmQlMjBNb3NxdWV8ZW58MHwxfDB8fHww",
+    "description": "Located in Muscat, the Sultan Qaboos Grand Mosque is an architectural gem that blends traditional Islamic, Middle Eastern, and modern design. The mosque is open to non-Muslim visitors and showcases a stunning prayer hall, massive chandeliers, and a grand hand-woven carpet that is among the world’s largest.",
+    "estimatedCostFromBangladesh": "Approx. $900 - $1250",
+    "viewDetailsUrl": "/details/6"
+  }
+]

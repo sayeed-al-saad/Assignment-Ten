@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const TouristSpots = ({touristspots}) => {
 
-    const {id, name, location, image, description}= touristspots;
+    const {id, name, location, image,}= touristspots;
 
   return (
     <div>

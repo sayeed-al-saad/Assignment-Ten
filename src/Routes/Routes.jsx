@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import Login from "../Login/Login";
 import Register from "../Register/Register";
 import PrivateRoutes from "./PrivateRoutes";
+import Details from "../Pages/Details/Details";
 
 
 
@@ -27,7 +28,8 @@ const router = createBrowserRouter([
             },
             {
                 path: "/touristspots/:id",
-                element: <PrivateRoutes></PrivateRoutes>
+                element: <PrivateRoutes><Details></Details></PrivateRoutes>,
+                loader: () => fetch("/touristspots.json")
             }  
         ]
     

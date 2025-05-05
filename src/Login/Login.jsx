@@ -1,7 +1,31 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { AuthContext } from '../Provider/AuthProvider'
 
 const Login = () => {
+
+  const {signIn} = useContext(AuthContext)
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handlelogin = (e) => {
+    e.preventDefault();
+    console.log(e.currentTarget);
+    const form = new FormData(e.currentTarget)
+    const email = form.get("email");
+    const password = form.get("password");
+
+    signIn(email, password)
+    .then(result => {
+      console.log(result)
+      navigate(location?.state?.from || '/');
+    })
+    .catch((error) => {
+      alert(error);
+    });
+  }
+
   return (
     <div className="hero bg-[#F8FAFC] ">
   <div className="hero flex justify-between lg:flex-row-reverse w-full ml-5 my-2 pl-5 gap-16">
@@ -13,14 +37,16 @@ const Login = () => {
     <div className="card flex-2/4 bg-[#D9DFC6] text-black w-full max-w-lg shrink-0 shadow-2xl">
       <div className="card-body space-y-5">
       <h1 className="text-5xl font-bold text-black">Login now!</h1>
+        <form onSubmit={handlelogin} >
         <fieldset className="fieldset ">
           <label className="label">Email</label>
-          <input type="email" className="input w-full text-black bg-white" placeholder="Email" />
+          <input name='email' type="email" className="input w-full text-black bg-white" placeholder="Email" />
           <label className="label">Password</label>
-          <input type="password" className="input w-full text-black bg-white" placeholder="Password" />
+          <input name='password' type="password" className="input w-full text-black bg-white" placeholder="Password" />
           <div><a className="link link-hover text-black">Forgot password?</a></div>
           <button className="btn btn-neutral mt-4">Login</button>
         </fieldset>
+        </form>
         <p className='text-black'>Don't Have an Account? <Link to="/register"><a className='font-bold' href="">Register</a></Link></p>
       </div>
     </div>

@@ -1,7 +1,36 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../Provider/AuthProvider';
+import Swal from 'sweetalert2';
+
 
 const Register = () => {
+
+  const { createUser } = useContext(AuthContext);
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    console.log(e.currentTarget);
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+    const name = form.get("name");
+    console.log(name, email, password);
+
+    createUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        Swal.fire({
+          title: "Successfully Registered",
+          icon: "success",
+          draggable: true
+        })
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
   return (
     <div className="hero bg-[#F8FAFC] ">
   <div className="hero flex justify-between lg:flex-row-reverse w-full ml-5 my-2 pl-8 gap-16">
@@ -13,16 +42,18 @@ const Register = () => {
     <div className="card flex-2/4 bg-[#D9DFC6] text-black w-full max-w-md shrink-0 shadow-2xl">
       <div className="card-body space-y-5">
       <h1 className="text-5xl font-bold">Register now!</h1>
-        <fieldset className="fieldset ">
+       <form onSubmit={handleRegister} action="">
+       <fieldset className="fieldset ">
           <label className="label">Name</label>
-          <input type="text" className="input w-full text-black bg-white" placeholder="Name" />
+          <input name='name' type="text" className="input w-full text-black bg-white" placeholder="Name" />
           <label className="label">Email</label>
-          <input type="email" className="input w-full text-black bg-white" placeholder="Email" />
+          <input name='email' type="email" className="input w-full text-black bg-white" placeholder="Email" />
           <label className="label">Password</label>
-          <input type="password" className="input w-full text-black bg-white" placeholder="Password" />
+          <input name='password' type="password" className="input w-full text-black bg-white" placeholder="Password" />
           <div><a className="link link-hover">Forgot password?</a></div>
           <button className="btn btn-neutral mt-4">Sign Up</button>
         </fieldset>
+       </form>
         <p>Already have an account? <Link to="/login"><a className='font-bold' href="">Login</a></Link></p>
       </div>
     </div>
@@ -31,4 +62,4 @@ const Register = () => {
   )
 }
 
-export default Register
+export default Register;
